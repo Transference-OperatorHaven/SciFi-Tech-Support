@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CustomerGenerator : MonoBehaviour
 {
@@ -13,13 +14,17 @@ public class CustomerGenerator : MonoBehaviour
     }
     TechAndFailures[] customerTech = new TechAndFailures[4];
 
-    [SerializeField]TextMeshProUGUI text;
+    [SerializeField]TextMeshProUGUI infoText, quotaText;
+    [SerializeField] Slider slider;
 
+    float angryPercent;
     string currentFault;
     int customerWave;
     int currentCustomerNumber, quotaTarget, quota;
     Coroutine currentCustomerCoroutine;
     bool customerComplaintResolved;
+
+    int chosenTech, chosenTechIssue;
 
     private void Start()
     {
@@ -55,11 +60,15 @@ public class CustomerGenerator : MonoBehaviour
           "I brought Super Mario Kosmos but my console refuses to install it." 
         };
 
+        WaveStart();
         GenerateCustomerComplaint();
     }
 
     private void Update()
     {
+        slider.value = angryPercent;
+        quotaText.text = "Quota: " + quota + "/" + quotaTarget;
+
         if(customerComplaintResolved)
         {
             StartCoroutine(Success());
@@ -71,22 +80,37 @@ public class CustomerGenerator : MonoBehaviour
         customerWave++;
         currentCustomerNumber = 0;
         quota = 0;
-        quotaTarget = 5 + customerWave * 3; //5,8,11,14,etc
+        quotaTarget = 5 + (customerWave-1) * 3; //5,8,11,14,etc
     }
 
     void GenerateCustomerComplaint()
     {
         currentCustomerNumber++;
-        int chosenTech = Random.Range(0, customerTech.Length);
-        currentFault = customerTech[chosenTech].techIssues[Random.Range(0, customerTech[chosenTech].techIssues.Length)];
-        text.text = currentFault;
+        chosenTech = Random.Range(0, customerTech.Length);
+        chosenTechIssue = Random.Range(0, customerTech[chosenTech].techIssues.Length);
+        currentFault = customerTech[chosenTech].techIssues[chosenTechIssue];
+        infoText.text = currentFault;
         currentCustomerCoroutine = StartCoroutine(angryTimer());
+    }
+
+    public void CheckIssue(int tech, int techIssue)
+    {
+        if (tech == chosenTech && techIssue == chosenTechIssue)
+        {
+            customerComplaintResolved = true;
+        }
+        else
+        {
+            Debug.Log("failed");
+            //failure event
+        }
     }
 
     IEnumerator Success()
     {
         StopCoroutine(currentCustomerCoroutine);
         customerComplaintResolved = false;
+        infoText.text = "";
         yield return new WaitForSeconds(3);
         quota++;
         if (quota == quotaTarget)
@@ -98,8 +122,15 @@ public class CustomerGenerator : MonoBehaviour
 
     IEnumerator angryTimer()
     {
+
         int angerTime = Mathf.RoundToInt(10.0f + (3.6f * Mathf.Sqrt(30 / currentCustomerNumber)));
-        yield return new WaitForSeconds(angerTime); 
+        float t = 0;
+        while(t < angerTime)
+        {
+            angryPercent = t/angerTime;
+            t += Time.deltaTime;
+            yield return null;
+        }
         if(!customerComplaintResolved )
         {
             //Trigger anger event
