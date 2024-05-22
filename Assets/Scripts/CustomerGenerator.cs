@@ -1,11 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class CustomerGenerator : TechAndFailures
+public class CustomerGenerator : MonoBehaviour
 {
+
+    struct TechAndFailures
+    {
+        public string techName;
+        public string[] techIssues;
+    }
     TechAndFailures[] customerTech = new TechAndFailures[4];
+
+    [SerializeField]TextMeshProUGUI text;
+
     string currentFault;
+    int customerWave;
+    int currentCustomerNumber, quotaTarget, quota;
+    Coroutine currentCustomerCoroutine;
+    bool customerComplaintResolved;
 
     private void Start()
     {
@@ -40,11 +54,56 @@ public class CustomerGenerator : TechAndFailures
           "My holoprojections are halfway in the bloody wall!!!!!", 
           "I brought Super Mario Kosmos but my console refuses to install it." 
         };
+
+        GenerateCustomerComplaint();
+    }
+
+    private void Update()
+    {
+        if(customerComplaintResolved)
+        {
+            StartCoroutine(Success());
+        }
+    }
+
+    void WaveStart()
+    {
+        customerWave++;
+        currentCustomerNumber = 0;
+        quota = 0;
+        quotaTarget = 5 + customerWave * 3; //5,8,11,14,etc
     }
 
     void GenerateCustomerComplaint()
     {
-        currentFault = customerTech[Random.Range(0, customerTech.Length)].techIssues[Random.Range(0, techIssues.Length)];
+        currentCustomerNumber++;
+        int chosenTech = Random.Range(0, customerTech.Length);
+        currentFault = customerTech[chosenTech].techIssues[Random.Range(0, customerTech[chosenTech].techIssues.Length)];
+        text.text = currentFault;
+        currentCustomerCoroutine = StartCoroutine(angryTimer());
     }
 
+    IEnumerator Success()
+    {
+        StopCoroutine(currentCustomerCoroutine);
+        customerComplaintResolved = false;
+        yield return new WaitForSeconds(3);
+        quota++;
+        if (quota == quotaTarget)
+        {
+            WaveStart();
+        }
+        GenerateCustomerComplaint();
+    }
+
+    IEnumerator angryTimer()
+    {
+        int angerTime = Mathf.RoundToInt(10.0f + (3.6f * Mathf.Sqrt(30 / currentCustomerNumber)));
+        yield return new WaitForSeconds(angerTime); 
+        if(!customerComplaintResolved )
+        {
+            //Trigger anger event
+        }
+    }
 }
+
