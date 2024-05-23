@@ -442,6 +442,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Refresh the cache of your holoprojector to free your
+            console's memory and storage space. Otherwise give it an hour break to
+            cooldown after long use. Supply this information to the user?
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &19341666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +625,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Recalibrate projections in the settings or hold the reset
+            button for 10 seconds if settings are inaccessible. Proceed with calibration
+            as standard. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -793,6 +821,22 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ensure a stable connection between the hand-link and
+            your implant. If this is the case then check your personal hand-link
+            for damage. If all else fails, clean the hand-link nodes with rubbing
+            alcohol or send it to a Ganymede service shop for repair. Supply this
+            information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -1073,6 +1117,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Check the warning LEDs near the energy receiver, if this
+            is displaying two orange lights then the hoover is faulty and needs to
+            be taken to a Ganymede service shop. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -1630,6 +1688,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ensure the general drink upgrade is installed in the
+            port in the back properly and no other dust or similar small blockages
+            have occured. Ensure that the port was using its supplied dust cover
+            prior to installation. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -2952,7 +3025,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.75
+  m_fontSize: 15.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2988,7 +3061,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 53.507328, y: -20.260365, z: 51.58259, w: 10.011609}
+  m_margin: {x: 53.507328, y: -20.260365, z: 51.58259, w: 17.456509}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3210,6 +3283,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You are using an older model of phone made by Ganymede.
+            Consider getting an upgrade with a discount by turning in your current
+            phone. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -3722,6 +3809,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: If you are sharing the coffee machine with other people,
+            be sure to re-use your hand link after someone else has used it. Supply
+            this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -4775,6 +4876,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: To fix latency issues across galaxies, take the quantum
+            crystal out for 10 seconds to let it reset itself and then reinsert into
+            the phone. Supply this information to the customer?
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5091,6 +5206,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Your synthpod has run out of material and needs to be
+            a replace. This is easily purchased from Ganymede in-person stores and
+            on the galactanet. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5557,6 +5686,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The hoover lacking any suction is an indicator of a blocked
+            hose, detach it and empty it. If that fails clean the air pump. Supply
+            this information to the customer?
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5813,6 +5956,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Having suction but not depositing into the pocket dimension
+            is an indicator of a full pocket dimension, turn the pocket dimension
+            off and on to empty it. Supply this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6284,6 +6441,20 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ensure a stable galactanet connection and that you are
+            signed into the MoonGame account the software was purchased on. Supply
+            this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -8532,6 +8703,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The hoover failing to turn on, and if no warning LED
+            is displayed, then checking the wireless energy transmitter and checking
+            the receiver for faults is advised. Supply this information to the customer?
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9052,8 +9237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf922da205fe8742a65f7096efd99fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tech: 0
-  techIssue: 0
+  text: {fileID: 545037617}
   customerManager: {fileID: 1289526211}
 --- !u!114 &1820331158
 MonoBehaviour:
@@ -9401,6 +9585,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ensure you are below the advertised maximum weight capacity.
+            If this still occurs whilst under the advertised maximum weight, then
+            recalibrate to your room and planet's gravity. Supply this information
+            to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -9978,6 +10177,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ensure you have "auto-adjust time zone" on in the phone
+            settings and you have a constant galactanet connection. Supply this information
+            to the customer?
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -10477,6 +10690,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1820331157}
+        m_TargetAssemblyTypeName: CheckIssue, Assembly-CSharp
+        m_MethodName: SetIssueText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Charge the phone for an hour, longer then advertised
+            10 minute charge time, then hold the power on and volume up buttons for
+            10 seconds. If this fails take it to a Ganymede service shop. Supply
+            this information to the customer?
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1125384118}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine

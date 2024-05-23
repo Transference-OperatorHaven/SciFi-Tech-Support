@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CheckIssue : MonoBehaviour
 {
-    public int tech, techIssue;
+    int tech, techIssue;
+    [SerializeField]TextMeshProUGUI text;
+    string issueText;
     [SerializeField] GameObject customerManager;
 
     public void SetTech(int tech)
@@ -13,6 +16,12 @@ public class CheckIssue : MonoBehaviour
     public void SetTechIssue(int techIssue)
     {
         this.techIssue = techIssue;
+    }
+
+    public void SetIssueText(string techString)
+    {
+        this.issueText = techString;
+        text.text = issueText;
     }
 
     public void Compare()
