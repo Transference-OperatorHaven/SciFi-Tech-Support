@@ -14,9 +14,9 @@ public class CustomerGenerator : MonoBehaviour
     }
     TechAndFailures[] customerTech = new TechAndFailures[4];
 
-    [SerializeField]TextMeshProUGUI infoText, quotaText;
+    [SerializeField]TextMeshProUGUI infoText, quotaText, gameOverWaveCount, timeSurvivedText;
     [SerializeField] Slider slider;
-
+    [SerializeField] GameObject gameOver;
     float angryPercent;
     string currentFault;
     int customerWave;
@@ -102,7 +102,7 @@ public class CustomerGenerator : MonoBehaviour
         else
         {
             Debug.Log("failed");
-            //failure event
+            Failure();
         }
     }
 
@@ -133,8 +133,16 @@ public class CustomerGenerator : MonoBehaviour
         }
         if(!customerComplaintResolved )
         {
-            //Trigger anger event
+            Failure();
         }
+    }
+
+    void Failure()
+    {
+        gameOver.SetActive(true);
+        gameOverWaveCount.text = "You made it to wave " + customerWave + " of customer complaints. Good job!";
+        timeSurvivedText.text = "your current run lasted " + Time.time + ". Good job!";
+        Time.timeScale = 0;
     }
 }
 
