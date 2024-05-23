@@ -111,8 +111,8 @@ public class CustomerGenerator : MonoBehaviour
         StopCoroutine(currentCustomerCoroutine);
         customerComplaintResolved = false;
         infoText.text = "";
-        yield return new WaitForSeconds(3);
         quota++;
+        yield return new WaitForSeconds(3);
         if (quota == quotaTarget)
         {
             WaveStart();
